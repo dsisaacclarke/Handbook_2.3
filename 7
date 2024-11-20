@@ -1,0 +1,19 @@
+ln 2
+
+#include <iostream>
+
+int main() 
+{
+    int n;
+    std::cin >> n;
+
+    double signOfVariable = 1;
+    double result = 0.0;
+
+    for (int i = 1; i <= n; ++i) 
+    {
+        result += signOfVariable / i;
+        signOfVariable = -signOfVariable;
+    }
+    std::cout << result;
+}
