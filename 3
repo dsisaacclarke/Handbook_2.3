@@ -1,0 +1,15 @@
+Високосный год
+
+#include <iostream>
+
+int main (){
+    int yearNumber;
+    std::cin >> yearNumber;
+    
+    if ((yearNumber % 400 == 0) || (yearNumber % 4 == 0 && yearNumber % 100 != 0)) 
+    {
+        std::cout << "YES";
+    } else {
+        std::cout << "NO";
+    }
+}
