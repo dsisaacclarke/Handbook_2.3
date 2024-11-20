@@ -1,0 +1,15 @@
+Ход ферзя
+
+#include <iostream>
+
+int main () 
+{
+    int columnNumber1, lineNumber1, columnNumber2, lineNumber2;
+    std::cin >> columnNumber1 >> lineNumber1 >> columnNumber2 >> lineNumber2;
+
+    if (columnNumber1 == columnNumber2 || lineNumber1 == lineNumber2 || abs(columnNumber1 - columnNumber2) == abs(lineNumber1 - lineNumber2)) {
+        std::cout << "YES";
+    } else {
+        std::cout << "NO";
+    }
+}
